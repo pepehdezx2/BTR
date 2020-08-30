@@ -1,0 +1,50 @@
+    <header>
+        <div class = logo>
+            <img src="../img/btr.jpg" width="250px">
+            <h1 class="subtitulos"> &nbsp; Sistema de pr&eacute;stamo de material para alumnos</h1>
+        </div>
+        <%- include ("./partials/messages") %>        
+        <form>
+        <div class = login>
+                <button formaction="/users/login" class=loginbut id="entrar">Entrar</button>
+                <button formaction="/users/register" class="loginbut" id="registarse">Registrarse</button>
+            </div>        
+        </form>
+            
+    </header>   
+  
+    <!--
+    <nav>
+        <ul class="barranav">
+            <li class="barra">
+                <a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>                
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-table" aria-hidden="true"></i> Lockers</a>
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-calendar" aria-hidden="true"></i> Reservar </a>
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-gift" aria-hidden="true"></i> Donaciones</a>
+            </li>
+        </ul>
+    </nav> -->
+    <br><br>
+    <div class= register>
+        <form action="/users/login" method="POST" class="form-register">
+            <p class="pform">Inicio de Sesi&oacute;n
+                <br>
+                 <input type="text" name="mail" size="40" class="controls" placeholder="Ingresa tu correo" value="<%= typeof name != 'undefined' ? name : '' %>"/>
+                <br>
+                <input type="password" name="password" size="40" class="controls" placeholder="Ingresa tu contraseña" value="<%= typeof name != 'undefined' ? name : '' %>"/>            
+              <input type="submit" class ="form-botons" value="Entrar">
+            </p>
+          </form>
+        </div>
+        <footer>
+            <p> Creado por BTR &copy;</p>
+        </footer>

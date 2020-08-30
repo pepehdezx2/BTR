@@ -1,0 +1,98 @@
+<header>
+        <div class = logo>
+            <img src="../img/btr.jpg" width="250px">
+            <h1 class="subtitulos"> &nbsp; Sistema de pr&eacute;stamo de material para alumnos</h1>
+            <p class="subtitulos">Welcome <%= name %></p>
+        </div>        
+        <!-- <form>
+            <div class = login>
+                <button formaction="login.html" class=loginbut id="entrar">Entrar</button>
+                <button formaction="register.html" class="loginbut" id="registarse">Registrarse</button>
+            </div>       
+        </form>
+    --> 
+</header>   
+<nav>
+    <ul class="barranav">
+
+        <li  class="hamburger" id="burger">
+            <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i></a>                
+        </li>
+
+        <li class = "barra" id="peligro">
+            <a href="/users/logout" > <i class="fas fa-door-open"></i> Logout </a>
+
+        </li>
+        <li class="barra">
+            <a href="/dashboard">
+                <i class="fa fa-home" aria-hidden="true"></i> Home </a>               
+            </li>
+            <li class="barra">
+                <a href="/account"> <i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+            </li>
+            <li class="barra">
+                <a href="/lockers"> <i class="fa fa-table" aria-hidden="true"></i> Lockers</a>
+            </li>
+            <li class="barra">
+                <a href="/reservations"> <i class="fa fa-calendar" aria-hidden="true"></i> Tutoriales </a>
+            </li>
+            <li class="barra">
+                <a href="/donations"> <i class="fa fa-gift" aria-hidden="true"></i> Donaciones</a>
+            </li>
+            <% if(isAdmin===true){ %>
+            <li class="barra">
+                <a href="/admin"> <i class="fas fa-users-cog" aria-hidden="true"></i> Administrar</a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+    <!--
+        <div class="bigbody">
+            <section>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </article>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </article>                
+                <article>                    
+                </article>                
+            </section>            
+            <aside>
+                <blockquote>Mensaje número uno</blockquote>
+                <blockquote>Mensaje número dos</blockquote>
+            </aside>           
+        </div> -->
+    
+
+        <div class="gif">
+            <p> Bienvenido </p> <p id="usuario"></p>
+            <p><img src="img/labos2.gif" class="giffy" ></p>
+        </div>
+        <br>  
+        <div class="slider">
+            <ul class="sli" >
+                <li class="lisli">
+                    <img src="img/proyecto1.jpg"  height="400" alt="Proyecto 1">
+                    <br>Sistemas Embebidos
+                </li>
+                <li class="lisli">
+                    <img src="img/proyecto2.jpg"  height="400" alt="Proyecto 2">
+                    <br>Brazo rob&oacute;tico
+                </li>
+                <li class="lisli">
+                    <img src="img/proyecto3.png"  height="400" alt="Proyecto 3">
+                    <br>Kit Edison
+                </li>
+                <li class="lisli">
+                    <img src="img/proyecto4.jpg"  height="400" alt="Proyecto 4">                
+                    <br>Seguidor de l&iacute;nea
+                </li>
+            </ul>   
+        </div>
+        <br>
+        <br>
+        <footer>
+            <p> Creado por BTR &copy;</p>
+        </footer>

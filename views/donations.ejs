@@ -1,0 +1,59 @@
+ <header>
+        <div class = logo>
+            <img src="../img/btr.jpg" width="250px">
+            <h1 class="subtitulos"> &nbsp; Sistema de pr&eacute;stamo de material para alumnos</h1>
+            <p class="subtitulos">Welcome <%= name %></p>
+        </div>
+    </header>   
+    <nav>
+    <ul class="barranav">
+
+        <li  class="hamburger" id="burger">
+            <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i></a>                
+        </li>
+
+        <li class = "barra" id="peligro">
+            <a href="/users/logout" > <i class="fas fa-door-open"></i> Logout </a>
+
+        </li>
+        <li class="barra">
+            <a href="/dashboard">
+                <i class="fa fa-home" aria-hidden="true"></i> Home </a>               
+            </li>
+            <li class="barra">
+                <a href="/account"> <i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+            </li>
+            <li class="barra">
+                <a href="/lockers"> <i class="fa fa-table" aria-hidden="true"></i> Lockers</a>
+            </li>
+            <li class="barra">
+                <a href="/reservations"> <i class="fa fa-calendar" aria-hidden="true"></i> Tutoriales </a>
+            </li>
+            <li class="barra">
+                <a href="/donations"> <i class="fa fa-gift" aria-hidden="true"></i> Donaciones</a>
+            </li>
+            <% if(isAdmin===true){ %>
+            <li class="barra">
+                <a href="/admin"> <i class="fas fa-users-cog" aria-hidden="true"></i> Administrar</a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+    <div class="classic">
+        <p>Donaciones en paypal </p>
+        <br>
+        <form action="https://www.paypal.me/pepehdezx2" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="PSJ6ANJDF37ZA" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donar con el botón PayPal" />
+            <img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+        <br>
+        <p> Si deseas donar algun insumo o herramienta  favor de llevarlo personalmente al laboratorio <br>
+            (A4-414) estaremos muy agradecidos</p>
+            <br>
+        </div>
+        <br>
+        <footer>
+            <p> Creado por BTR &copy;</p>
+        </footer>

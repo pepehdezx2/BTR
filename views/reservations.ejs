@@ -1,0 +1,87 @@
+<header>
+    <div class = logo>
+            <img src="../img/btr.jpg" width="250px">
+            <h1 class="subtitulos"> &nbsp; Sistema de pr&eacute;stamo de material para alumnos</h1>
+            <p class="subtitulos">Welcome <%= name %></p>
+		</div>
+	</header>   
+	<nav>
+    <ul class="barranav">
+
+        <li  class="hamburger" id="burger">
+            <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i></a>                
+        </li>
+
+        <li class = "barra" id="peligro">
+            <a href="/users/logout" > <i class="fas fa-door-open"></i> Logout </a>
+
+        </li>
+        <li class="barra">
+            <a href="/dashboard">
+                <i class="fa fa-home" aria-hidden="true"></i> Home </a>               
+            </li>
+            <li class="barra">
+                <a href="/account"> <i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+            </li>
+            <li class="barra">
+                <a href="/lockers"> <i class="fa fa-table" aria-hidden="true"></i> Lockers</a>
+            </li>
+            <li class="barra">
+                <a href="/reservations"> <i class="fa fa-calendar" aria-hidden="true"></i> Tutoriales </a>
+            </li>
+            <li class="barra">
+                <a href="/donations"> <i class="fa fa-gift" aria-hidden="true"></i> Donaciones</a>
+            </li>
+            <% if(isAdmin===true){ %>
+            <li class="barra">
+                <a href="/admin"> <i class="fas fa-users-cog" aria-hidden="true"></i> Administrar</a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+	<div class="classic">
+    <table align="center" cellspacing="2" cellpadding="2" border="1">
+        <tr>
+            <th>
+                <br>
+                <p class="subtitulos">Experimentos Raspberry Pi</p>
+                <img src="../img/rpi.jpg" width="200px">
+                <br>
+                <a href="https://youtu.be/1B2gvj9La4I"> Facil </a>
+                <br>
+                <a href="https://circuitdigest.com/microcontroller-projects/raspberry-pi-fm-transmitter"> Medio </a>
+                <br>
+                <a href="https://www.hackster.io/tygo-bear/outdoor-rover-3105af"> Dificil </a>
+            </th>
+            <th>
+                <br>
+                <p class="subtitulos">Experimentos Spartan</p>
+                <img src="../img/spartan.jpg" width="200px">
+                <br>
+                <a href="https://www.fpga4fun.com/Opto.html"> Facil </a>
+                <br>
+                <a href="https://www.fpga4fun.com/TextLCDmodule.html"> Medio </a>
+                <br>
+                <a href="https://www.fpga4fun.com/GraphicLCDpanel.html"> Dificil </a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <br>
+                <p class="subtitulos">Experimentos Arduino</p>
+                <img src="../img/arduino.jpg" width="200px">
+                <br>
+                <a href="https://www.makeuseof.com/tag/arduino-traffic-light-controller/"> Facil </a>
+                <br>
+                <a href="https://www.electroniclinic.com/automatic-speed-controller-for-electric-bike-using-arduino-and-gyroscope-mpu6050/"> Medio </a>
+                <br>
+                <a href="https://www.electroniclinic.com/wireless-hand-gesture-controlled-robot-with-flex-sensor-using-arduino/"> Dificil </a>
+            </th>
+        </tr>
+    </table>
+	</div>
+	<br>
+	<br>
+	<footer>
+		<p> Creado por BTR &copy;</p>
+	</footer>

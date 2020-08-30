@@ -1,0 +1,549 @@
+.titulos{
+    color: white;
+    font-family: Proto;
+    font-size: 70px;
+}
+.fprp{
+    display: flex;
+    justify-content: center;
+}
+.subtitulos{
+    color: white;
+    font-family: Champagne;    
+    font-size: 30px;
+}
+.logo{    
+    margin: auto;         
+}
+.login{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.loginbut{
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: proto;
+    font-size: 30px;
+}
+#entrar{
+    background-color: rgba(255, 4, 4, 0.37);
+}
+#registarse{
+    background-color: rgba(0, 153, 255, 0.459);
+}
+.bigbody{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+}
+.register{
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    height: auto;
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: arial;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.controls {
+    width: 76%;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    font-family: 'arial';
+    font-size: 18px;
+    color: white;
+  }
+.form-botons{
+    width: 320px;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.pform{
+    text-align: center; 
+}
+
+.RulesLockers{
+    text-decoration: none;
+    color: white;
+}
+.RulesLockers:hover{
+    text-decoration: underline;
+    color: white;
+}
+.gif{      
+    margin-top: 100px;        
+    text-align: center;                        
+}
+.giffy{
+    border: 1px white solid;
+    border-radius: 10px;          
+    width: 150px;
+}
+
+/*Cellphones*/
+@media (min-width: 1px) and (max-width: 599px){
+    body{
+        background-image: url(../img/background3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       /* background-color: rgba(255, 255, 255, 0.986);*/
+       min-height: 100vh; 
+       display: flex;
+        flex-direction: column;
+
+    }
+    header{ 
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        border: 1px solid #ffffff; 
+        text-align: center;           
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+    .titulos{
+        font-size: 30%;
+    }
+    .subtitulos{ 
+        font-size: 30%;        
+    }
+    #entrar{
+        width: 80%;
+        font-size: 100%;
+        
+    }
+    #registarse{
+        width: 80%;
+        font-size: 100%;
+    }
+    .register{
+        border: 1px solid #ffffff; 
+    }
+    .login{
+        justify-content: right;
+    }
+    .slider{
+        display: none
+    }
+    .titulos{
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+    }
+    .subtitulos{
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+    }
+
+    .barranav{
+        display: flex;        
+        height: 55px;
+        border: 1px white solid;
+        flex-direction: column;
+        margin-left: 0px;
+        background-color: rgba(0, 0, 0,0.7);
+    }
+    .barra{
+        /*display: none;*/
+        list-style-type: none;
+        background-color: rgba(0, 0, 0,0.7);
+        width: 90%;
+        text-align: center;
+       
+        margin-right: 10px;
+        margin-left: 0;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 3px;   
+        font-family: Arial;
+        font-size: 17px;
+        z-index: 2;
+        height: 100px;
+    }
+    .barra a{
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    .barra:hover{   
+        color: black;
+        background-color: rgba(0, 153, 255, 0.459);
+    }
+    .hamburger{
+        text-align: left;
+        width: 100px;
+        list-style-type: none;
+        background-color: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;        
+        height: 80px;
+        padding-top:7px;
+    }
+    .hamburger  a{
+        color: white;
+        text-decoration: none;   
+        padding-top: 10px;       
+    }
+
+    .classic{
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0,0.7);
+        color: white;
+        text-align: center;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-family: arial;
+    }
+    footer{
+        color: white;
+        background-color: rgba(0, 0, 0,0.7);
+        text-align: center;
+        width: 100%; 
+        height: 50px;
+        font-family: Arial;
+        font-size: 15px;
+        border: 1px white solid;
+        border-radius: 3px; 
+        margin-top: 10px;
+    }
+}
+/*tablets*/
+@media (min-width: 600px) and (max-width: 1000px){
+    body{        
+        background-image: url(../img/background3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; 
+       display: flex;
+        flex-direction: column;
+    }
+    header{
+        background-color: rgba(0, 0, 0,0.6);
+        display: flex;
+        border: 1px white solid;
+        text-align: center;     
+    }
+
+    .slider{
+        display: none
+    }
+    nav{
+       
+    }
+    .barranav{
+        display: flex;        
+        height: 55px;
+        border: 1px white solid;
+        flex-direction: column;
+        margin-left: 0px;
+        background-color: rgba(0, 0, 0,0.7);
+    }
+    .barra{
+        /*display: none;*/
+        list-style-type: none;
+        background-color: rgba(0, 0, 0,0.7);
+        width: 150px;
+       /* height: 80px;*/
+        text-align: center;
+        margin-top: 1px;
+        padding: 10px;
+        margin-bottom: 1px;
+        margin-right: 10px;
+        margin-left: 0;
+        padding-top: 5px;
+        border: 1px solid white;
+        border-radius: 3px;   
+        font-family: Arial;
+        font-size: 22px;
+        z-index: 2;
+    }
+    .barra a{
+        color: white;
+        text-decoration: none;
+    }
+    .barra:hover{   
+        color: black;
+        background-color: rgba(0, 153, 255, 0.459);
+    }
+    .hamburger{
+        text-align: center;
+        width: 100px;
+        list-style-type: none;
+        background-color: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 30px;
+        padding: 5px;
+        height: 80px;
+    }
+    .hamburger  a{
+        color: white;
+        text-decoration: none;   
+        padding-top: 10px;       
+    }
+
+    .classic{
+        width: 80%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-family: arial;
+    }
+    .gif{      
+        margin-top: 100px;        
+        text-align: center;                        
+    }
+    .giffy{
+        border: 1px white solid;
+        border-radius: 10px;          
+        width: 300px;
+    }
+    .register{
+        border: 2px solid #ffffff;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    footer{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-right: auto;
+        margin-left: auto; 
+        width: 100%; 
+        color: white;
+        font-size: 20px;
+        height: 50px;
+        font-family: Arial;
+        border: 1px white solid;
+        border-radius: 3px; 
+        margin-top: auto;
+    }
+    
+}
+/*computers*/
+@media(min-width: 1001px){
+    body{
+        background-image: url(../img/background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh; 
+        display: flex;
+         flex-direction: column;
+    }
+    .titulos{
+        color: white;
+        font-size: 70px;
+        font-family: Proto;
+    }
+    .subtitulos{
+        color: white;
+        font-size: 30px;
+        font-family: Champagne;    
+    }
+    .logo{    
+        margin: auto;         
+    }
+    .login{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+    .loginbut{
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 30px;
+        font-family: proto;
+        color: white;
+    }
+    #entrar{
+        background-color: rgba(255, 4, 4, 0.37);
+    }
+    #registarse{
+        background-color: rgba(0, 153, 255, 0.459);
+    }
+    header{ 
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        border: 1px white solid;
+        text-align: center;           
+    }
+    nav{
+        background-color: rgba(0, 0, 0, 0.3);
+    }  
+    .barra  {
+        list-style-type: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 150px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        padding-top: 5px;
+        border: 1px solid white;
+        border-radius: 3px;   
+        font-family: Arial;
+        font-size: 20px;
+    }
+    .barra  a{
+        color: white;
+        text-decoration: none;   
+        display: block;
+    }
+    .barra:hover{   
+        color: black;
+        background-color: rgba(0, 153, 255, 0.459);
+    }    
+    #peligro:hover{
+        color: white;
+        background-color: red;
+    }
+    .barranav{
+        display: flex;       
+        height: 55px;
+        justify-content: center;
+        border: 1px white solid;
+    }
+    .bigbody{
+        margin: auto;         
+        width: 1000px;
+        display: flex;
+    }
+    section{
+        width: 600px;   
+        padding: 30px;
+        margin: auto;
+        border: 5px   black solid;
+        font-family: Arial;
+        font-size: 25px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    aside{
+        width: 200px;  
+        color: white;    
+        background-color: rgba(0, 153, 255,0.8);
+        border: white 1px solid;
+        border-radius: 5px;
+    }   
+    footer{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.466);
+        text-align: center;
+        width: 100%;
+        height: 50px; 
+        font-family: Arial;
+        font-size: 20px;
+        border: 1px white solid;
+        border-radius: 3px;          
+        margin-top: auto;
+    }
+    .register{
+        background-color: rgba(0, 0, 0, 0.55);
+        color: white;
+        text-align: left;
+        justify-content: center;
+        margin: auto;
+        width: 400px;
+        height: auto;    
+        padding-top: 5px;
+        font-size: 20px;
+        font-family: arial;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .controls {
+        width: 76%;
+        background: rgba(0, 0, 0, 0.55);
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ffffff;
+        font-family: 'arial';
+        font-size: 18px;
+        color: white;
+      }
+    .form-botons{
+        width: 320px;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+    .pform{
+        text-align: center;        
+    }    
+    .classic{
+        width: 700px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.514);
+        color: white;
+        text-align: center;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-family: arial;    
+    }
+    .RulesLockers{
+        text-decoration: none;
+        color: white;
+    }
+    .RulesLockers:hover{
+        text-decoration: underline;
+        color: white;
+    }
+    .hamburger{
+        display: none;
+    }
+    .gif{
+        display: none;
+    }
+    .classic{
+        width: 700px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.514);
+        color: white;
+        text-align: center;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-family: arial;
+    }
+}
+@font-face {
+    font-family: Nyata;
+    src: url(../fonts/NyataFTR-Regular.otf);
+ }
+ @font-face {
+    font-family: Champagne;
+    src: url(../fonts/Champagne\ &\ Limousines.ttf);
+ }
+ @font-face {
+    font-family: Proto;
+  src: url(../fonts/Prototype.ttf);
+ }

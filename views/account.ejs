@@ -1,0 +1,81 @@
+<header>
+        <div class = logo>
+            <img src="../img/btr.jpg" width="250px">
+            <h1 class="subtitulos"> &nbsp; Sistema de pr&eacute;stamo de material para alumnos</h1>
+            <p class="subtitulos">Welcome <%= name %></p>
+        </div>
+
+    </header>   
+    <nav>
+    <ul class="barranav">
+
+        <li  class="hamburger" id="burger">
+            <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i></a>                
+        </li>
+
+        <li class = "barra" id="peligro">
+            <a href="/users/logout" > <i class="fas fa-door-open"></i> Logout </a>
+
+        </li>
+        <li class="barra">
+            <a href="/dashboard">
+                <i class="fa fa-home" aria-hidden="true"></i> Home </a>               
+            </li>
+            <li class="barra">
+                <a href="/account"> <i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+            </li>
+            <li class="barra">
+                <a href="/lockers"> <i class="fa fa-table" aria-hidden="true"></i> Lockers</a>
+            </li>
+            <li class="barra">
+                <a href="/reservations"> <i class="fa fa-calendar" aria-hidden="true"></i> Tutoriales </a>
+            </li>
+            <li class="barra">
+                <a href="/donations"> <i class="fa fa-gift" aria-hidden="true"></i> Donaciones</a>
+            </li>
+            <% if(isAdmin===true){ %>
+            <li class="barra">
+                <a href="/admin"> <i class="fas fa-users-cog" aria-hidden="true"></i> Administrar</a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+    <% if(oscilloscope === 0 && fgenerator === 0 && multimeter === 0 && font === 0){ %>
+    <div class="classic">
+        <p>Aun no tienes nada prestado</p>
+    <% } else{ %>
+    <div class="classic">
+    <table align="center" cellspacing="2" cellpadding="2" border="1">
+        <tr>
+            <th>
+                <img src="../img/oscilloscope.jpg" width="225px">
+                <br>
+                <p class="subtitulos">Osciloscopios prestados: <%= oscilloscope %></p>
+            </th>
+            <th>
+                <img src="../img/fgenerator.jpg" width="225px">
+                <br>
+                <p class="subtitulos">Generadores de funciones prestadas: <%= fgenerator %></p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <img src="../img/multimeter.jpg" width="225px">
+                <br>
+                <p class="subtitulos">Multimetros prestados: <%= multimeter %></p>
+            </th>
+            <th>
+                <img src="../img/font.jpg" width="225px">
+                <br>
+                <p class="subtitulos">Fuentes prestadas: <%= font %></p>
+            </th>
+        </tr>
+    </table>
+    <% } %>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p> Creado por BTR &copy;</p>
+    </footer>

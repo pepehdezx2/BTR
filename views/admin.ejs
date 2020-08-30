@@ -1,0 +1,99 @@
+<header>
+        <div class = logo>
+            <img src="../img/btr.jpg" width="250px">
+            <h1 class="subtitulos"> &nbsp; Sistema de pr&eacute;stamo de material para alumnos</h1>
+            <p class="subtitulos">Welcome <%= name %></p>
+        </div>
+
+    </header>   
+    <nav>
+    <ul class="barranav">
+
+        <li  class="hamburger" id="burger">
+            <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i></a>                
+        </li>
+
+        <li class = "barra" id="peligro">
+            <a href="/users/logout" > <i class="fas fa-door-open"></i> Logout </a>
+
+        </li>
+        <li class="barra">
+            <a href="/dashboard">
+                <i class="fa fa-home" aria-hidden="true"></i> Home </a>               
+            </li>
+            <li class="barra">
+                <a href="/account"> <i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+            </li>
+            <li class="barra">
+                <a href="/lockers"> <i class="fa fa-table" aria-hidden="true"></i> Lockers</a>
+            </li>
+            <li class="barra">
+                <a href="/reservations"> <i class="fa fa-calendar" aria-hidden="true"></i> Tutoriales </a>
+            </li>
+            <li class="barra">
+                <a href="/donations"> <i class="fa fa-gift" aria-hidden="true"></i> Donaciones</a>
+            </li>
+            <% if(isAdmin===true){ %>
+            <li class="barra">
+                <a href="/admin"> <i class="fas fa-users-cog" aria-hidden="true"></i> Administrar</a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+    <div class="classic">
+        <br>
+        <br>
+        <h2 class="subtitulos">Transacciones</h2>
+        <br>
+        <form action="/admin" method="POST">
+
+        <input type="text" id="matmat" name="info" class="controls" placeholder="Matricula (entrega o recibe) Material">
+        <button id="botonlista" class="btn btn-success">Enviar</button>
+    </form>
+    <div>
+        <ul id="lista">
+
+
+        </ul>
+
+    </div>
+
+    </div>
+    <br>
+    <br>
+    <!--
+    <script> 
+   
+    
+    $("#botonlista").click(añadir);  
+    $("div").on("click",".borrar", deleter);//se le asigna la funcion de borrar a su respectivo boton
+//funciones para añadir articulo
+function añadir(e){
+    e.preventDefault();
+    var lista = $("#lista");
+    var res =  $("#matmat").val();
+    var res1 = res.split(" ");
+
+    var nuevoArticulo = $('<li class="controls fprp"> <p>'+ " matricula: " + res1[0]+ " prestado " + res1[1] +'&emsp; </p> <div> <button method="DELETE" class="borrar btn btn-primary">delete</button> </div> </li>')
+    lista.append(nuevoArticulo);
+}
+//funcion para borrar articulo
+function deleter(e){
+    e.preventDefault();
+    var padre = $(this).parent();
+    padre.parent().remove();
+}
+
+
+    
+    </script>
+
+
+
+-->
+
+
+    <br>
+    <footer>
+        <p> Creado por BTR &copy;</p>
+    </footer>

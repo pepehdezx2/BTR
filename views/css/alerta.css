@@ -1,0 +1,16 @@
+#flash > .alertaa{
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	color: white;
+}
+
+
+.adios form{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.peligro li:hover{
+	background-color: red;
+}

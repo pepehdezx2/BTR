@@ -1,0 +1,64 @@
+<header>
+        <div class = logo>
+            <img src="../img/btr.jpg" width="250px">
+            <h1 class="subtitulos"> &nbsp; Sistema de pr&eacute;stamo de material para alumnos</h1>
+        </div>
+        <%- include ("./partials/messages") %>       
+        <form>
+        <div class = login>
+                <button formaction="/users/login" class=loginbut id="entrar">Entrar</button>
+                <button formaction="/users/register" class="loginbut" id="registarse">Registrarse</button>
+            </div>        
+        </form>
+            
+    </header>
+<!--
+    <nav>
+        <ul class="barranav">
+            <li class="barra">
+                <a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>                
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-user" aria-hidden="true"></i> Mi cuenta</a>
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-table" aria-hidden="true"></i> Lockers</a>
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-calendar" aria-hidden="true"></i> Reservar </a>
+            </li>
+            <li class="barra">
+                <a href="#"> <i class="fa fa-gift" aria-hidden="true"></i> Donaciones</a>
+            </li>
+        </ul>
+    </nav> -->
+    <br>
+    <br>
+    <div class= register>
+    <form action="/users/register" method="POST" class="form-register">
+        <p class="pform">Registro
+            <br>
+             <input type="text" id="uname" name="nombre" size="40" class="controls" placeholder="Ingresa tu nombre completo">    
+            <br>
+            <input type="text" id="umail" name="mail" size="40" class="controls" placeholder="Ingresa tu Correo electr&oacute;nico">            
+            <br>
+             <input type="text" id="uid" name="mat" size="40" class="controls" placeholder="Ingresa tu Matr&iacute;cula, con A o LC">
+            <br> 
+            <input id="umajor" type="text" size="40" name="carrera" class="controls" placeholder="Ingresa tu carrera (Siglas)">
+            <br>
+            <input id="password" type="password" size="40" name="password" class="controls" placeholder="Ingresa tu contraseña">
+            <br>
+            <input id="cpassword" type="password" size="40" name="password2" class="controls" placeholder="Confirma tu contraseña">
+            <br>
+            Al enviar el formulario, aceptas estar de acuerdo con los  <a href="#" class="RulesLockers" target="_blank">T&eacute;rminos y Condiciones</a>
+           <button id="Benviar" class="form-botons">
+          Enviar
+        </button>
+        <input type="reset" class ="form-botons" value="Borrar">
+        </p>
+      </form>
+    </div>
+    <footer>
+        <p> Creado por BTR &copy;</p>
+    </footer>
+    <!-- <script src="js/register.js"></script> -->
